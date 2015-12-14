@@ -19,24 +19,24 @@
     </div>
     <div id="section" align="center">
       <h3>Registration</h3>
-      <form name="regForm" onsubmit="return validateform()">
+      <form name="regForm" onsubmit="return validateform();">
           <table border="0">
             <tr>
               <td >First name</td>
-              <td><input type="text" name ="fname" size="20"></td>
+              <td><input type="text" id="fname" name ="fname" size="20"></td>
             </tr>
             <tr>
   	           <td>Last name</td>
-  	           <td><input type="text" name="lname" ></td>
+  	           <td><input type="text" id="lname" name="lname" ></td>
             </tr>
             <tr>
                <td>Age</td>
-               <td><input type="text" name="age"></td>
+               <td><input type="text" id="age" name="age"></td>
             </tr>
             <tr>
 	             <td>Gender</td>
 	             <td> 
-                  <select name="gender">
+                  <select id="gender" name="gender">
                     <option selected="" value="Default">select</option>  
                     <option value="male">male</option>
                     <option value="female">female</option>
@@ -68,19 +68,19 @@
             </tr>
             <tr>
               <td>Email id</td>
-              <td><input type="text" name="email" size="20" ></td>
+              <td><input type="text" id="email" name="email" size="20" ></td>
             </tr>
             <tr>
               <td>User name</td>
-              <td><input type="text" name="userid" size="20" ></td>
+              <td><input type="text" id="userid" name="userid" size="20" ></td>
             </tr>
             <tr>
               <td>Password  </td>
-              <td><input type="password" name="psw" ></td>
+              <td><input type="password" id="psw" name="psw" ></td>
             </tr>
              <tr>
               <td>Confirm Password  </td>
-              <td><input type="password" name="psw2" ></td>
+              <td><input type="password" id="psw2" name="psw2" ></td>
             </tr>
           </table><br>
           <input type="submit" value="Submit" name="b2"> 

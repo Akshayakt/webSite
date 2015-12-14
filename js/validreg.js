@@ -1,16 +1,16 @@
 function validateform()
 {
-	    var uid = document.regForm.userid;  
-	    var paswd=document.regForm.psw;
-	    var fname=document.regForm.fname;
-	    var lname=document.regForm.lname;
-	    var email=document.regForm.email;
-        var age=document.regForm.age;
-        var eng=document.regForm.eng;
-        var mal=document.regForm.mal;
-        var hin=document.regForm.hin;
-        var paswd2=document.regForm.psw2;
-        var gender=document.regForm.gender;
+	    var uid = document.getElementById("userid");    
+	    var paswd=document.getElementById("psw");
+	    var fname=document.getElementById("fname");
+	    var lname=document.getElementById("lname");
+	    var email=document.getElementById("email");
+        var age=document.getElementById("age");
+        var eng=document.getElementById("eng");
+        var mal=document.getElementById("mal");
+        var hin=document.getElementById("hin");
+        var paswd2=document.getElementById("psw2");
+        var gender=document.getElementById("gender");
 	    if(fname_valid(fname)){
 	    	if (lname_valid(lname)) {
                 if (age_valid(age)) {
