@@ -5,7 +5,7 @@
 	    
 	    if(email_valid(usrmail))
 	    {
-	   		if (paswd_valid(paswd,7,20)) {
+	   		if (paswd_valid(paswd)) {
                 location.href = "home.html?userEmail="+usrmail.value;
 			}
 		}
@@ -26,18 +26,16 @@ function email_valid(usrmail)
     }  
 } 
 
-function paswd_valid(paswd,min,max)  
+function paswd_valid(paswd)  
 {  
     var passid_len = paswd.value.length;  
-    if (passid_len == 0 ||passid_len >= max || passid_len < min)  
+    if (passid_len == 0)  
     {  
-    	alert("Password should not be empty / length be between "+min+" to "+max);  
+    	alert("Password should not be empty");  
     	paswd.focus();  
     	return false;  
     }  
     else{
-         alert('Access allowed');  
-        window.location.reload(true);
         return true;  
     }
     
