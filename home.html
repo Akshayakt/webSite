@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<link rel="shortcut icon" href="images/lib.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/website.css">
+    <title> CHILDREN LIBRARY</title>
+
+     <script type="text/javascript">
+        function getQuerystring(){
+          var q=document.location.toString();
+          var a;
+          q=q.split("?");
+          q=q[1].split("&");
+          var str="";
+          for(i=0;i<q.length;i++){
+            tmp=q[i].split("=");
+            a=tmp[1];
+            a=a.split("@");
+            str+="<br>"+"<br>"+"hi"+"<br/>"+a[0]+"<br />"
+          }
+          document.getElementById("results").innerHTML=str;
+        }
+        onload=function(){
+           getQuerystring()
+        }
+     </script>
+  </head>
+  <body >
+    <div id="header">
+      <img src="images/lib.jpeg" align="left" style="width:150px;height:150px;">
+      <h1 align="center"> CHILDREN LIBRARY</h1>
+    </div>
+    <div id="nav" align="left">
+      <ul >
+        <li class="a"><a href='home.html'>Home</a></li>
+        <li><a href='login.html'>Login</a></li>
+        <li><a href='registration.html'>Registration</a></li>
+      </ul>
+    </div>
+    <div id="body" >
+      <br>
+      <br><br><br>
+       <form name="loginForm" onsubmit="return formData()" method="get" action="home.html">
+    <div id="results" style="color:blue;font-size: 20px;"></div>
+    </form>
+      <p align="center" style="color:black">
+        This site helps you discover books based on your child's interests, Sort and filter titles by genre, topic, age range, even the type of main characters in the book! Track your child's reading progress with badges and Learning Tracks.
+      </p>
+    </div>
+    <div id="footer">
+      Copyright 2015 © childrenlibrary.com All Rights reserved
+    </div>
+  </body>
+</html>

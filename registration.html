@@ -1,0 +1,95 @@
+ <!DOCTYPE html>
+<html>
+  <head>
+    <title>CHILDREN LIBRARY</title>
+    <link rel="shortcut icon" href="images/lib.jpeg" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/website.css">
+  </head>
+  <body >
+    <script src="js/validreg.js"></script>
+    <div id="header">
+      <img src="images/lib.jpeg" align="left" style="width:150px;height:150px;">
+      <h1 align="center"> CHILDREN LIBRARY</h1>
+    </div>
+    <div id="nav" align="left">
+      <ul >
+        <li class="a"><a href='home.html'>Home</a></li>
+        <li><a href='login.html'>Login</a></li>
+        <li><a href='registration.html'>Registration</a></li>
+      </ul>
+    </div>
+    <div id="section" align="center">
+      <h3>Registration</h3>
+      <form name="regForm" onsubmit="return validateform();">
+          <table border="0">
+            <tr>
+              <td >First name</td>
+              <td><input type="text" id="fname" name ="fname" size="20"></td>
+            </tr>
+            <tr>
+  	           <td>Last name</td>
+  	           <td><input type="text" id="lname" name="lname" ></td>
+            </tr>
+            <tr>
+               <td>Age</td>
+               <td><input type="text" id="age" name="age"></td>
+            </tr>
+            <tr>
+	             <td>Gender</td>
+	             <td> 
+                  <select id="gender" name="gender">
+                    <option selected="" value="Default">select</option>  
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+                  </select> 
+                </td>
+            </tr>
+            <tr>
+              <td>Country
+              </td>
+              <td>
+                <input type="radio" name="country" value="indian" checked>Indian<br>
+                <input type="radio" name="country" value="others">Others<br>
+              </td>
+            </tr>
+            <tr>
+            <tr>
+              <td>Interest</td>
+              <td>
+              <textarea name="tarea1" id="tarea1" size="20" ></textarea>
+              </td>
+            </tr>
+              <td>Languages Known
+              </td>
+              <td>
+                <input type="checkbox" id="eng" value="english">English<br>
+                <input type="checkbox" id="mal"value="malayalam">Malayalam<br>
+                <input type="checkbox" id="hin" value="hindi">Hindi<br>
+              </td>
+            </tr>
+            <tr>
+              <td>Email id</td>
+              <td><input type="text" id="email" name="email" size="20" ></td>
+            </tr>
+            <tr>
+              <td>User name</td>
+              <td><input type="text" id="userid" name="userid" size="20" ></td>
+            </tr>
+            <tr>
+              <td>Password  </td>
+              <td><input type="password" id="psw" name="psw" ></td>
+            </tr>
+             <tr>
+              <td>Confirm Password  </td>
+              <td><input type="password" id="psw2" name="psw2" ></td>
+            </tr>
+          </table><br>
+          <input type="submit" value="Submit" name="b2"> 
+          <input type="reset" value="Reset" name="r1">
+        </form> 
+    </div>
+    <div id="footer">
+      Copyright 2015 © childrenlibrary.com All Rights reserved
+    </div>
+  </body>
+</html>
