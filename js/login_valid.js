@@ -1,27 +1,30 @@
  function validateform1()
 {
-	    var uid = document.regForm1.userid1;  
-	    var paswd=document.regForm1.psw1;
+	    var usrmail= document.getElementById("userEmail");  
+        var paswd=document.getElementById("passWord");
 	    
-	    
-	    if(user_valid(uid,5,15))
+	    if(email_valid(usrmail))
 	    {
-	   		if (paswd_valid(paswd,8,20)) {
+	   		if (paswd_valid(paswd,7,20)) {
+                location.href = "home.html?userEmail="+usrmail.value;
 			}
 		}
 						 return false;
 }
-function user_valid(uid,min,max)  
+function email_valid(usrmail)  
+{  
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;  
+    if(usrmail.value.match(mailformat))  
     {  
-    var uid_len = uid.value.length;  
-    if (uid_len == 0 || uid_len >= max || uid_len < min)  
-    {  
-    	alert("User Id should not be empty / length be between "+min+" to "+max);  
-    	uid.focus();  
-    	return false;  
+        return true;  
     }  
-    return true;  
-}  
+    else  
+    {  
+        alert("You have to enter a valid email address!");  
+        usrmail.focus();  
+        return false;  
+    }  
+} 
 
 function paswd_valid(paswd,min,max)  
 {  
@@ -33,7 +36,7 @@ function paswd_valid(paswd,min,max)
     	return false;  
     }  
     else{
-         alert('Form Successfully Submitted');  
+         alert('Access allowed');  
         window.location.reload(true);
         return true;  
     }
