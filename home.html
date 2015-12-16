@@ -8,21 +8,30 @@
      <script type="text/javascript">
         function getQuerystring(){
           var q=document.location.toString();
-          var a;
+          //var a;
           q=q.split("?");
-          q=q[1].split("&");
-          var str="";
-          for(i=0;i<q.length;i++){
-            tmp=q[i].split("=");
-            a=tmp[1];
-            a=a.split("@");
-            str+="<br>"+"<br>"+"hi"+"<br/>"+a[0]+"<br />"
+
+          if(q[1]){
+            q=q[1].split("&");
+            q=q[0].split("=");
+            q=q[1];
+            q=q.split("@");
+            q=q[0];
+            sessionStorage.a=q;
           }
-          document.getElementById("results").innerHTML=str;
+            /*var str="";
+            str+="hi"+" "+q[0];
+          document.getElementById("results").innerHTML=str;*/
         }
-        onload=function(){
-           getQuerystring()
-        }
+         getQuerystring();
+        window.onload=function(){
+          //getQuerystring();
+           if(sessionStorage.a){
+           document.getElementById("results").innerHTML='Hi'+" "+sessionStorage.a;
+            }else{
+              window.location.href = "./login.html";
+            }
+        };
      </script>
   </head>
   <body >
