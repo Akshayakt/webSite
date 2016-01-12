@@ -11,6 +11,7 @@ function validateform()
         var hin=document.getElementById("hin");
         var paswd2=document.getElementById("psw2");
         var gender=document.getElementById("gender");
+        var message=document.getElementById("message");
 	    if(fname_valid(fname)){
 	    	if (lname_valid(lname)) {
                 if (age_valid(age)) {
@@ -39,7 +40,7 @@ function user_valid(uid,min,max)
     var uid_len = uid.value.length;  
     if (uid_len == 0 || uid_len >= max || uid_len < min)  
     {  
-        alert("User Id should not be empty / length be between "+min+" to "+max);  
+        message.innerHTML="User Id should not be empty / length be between "+min+" to "+max;  
         uid.focus();  
         return false;  
     }  

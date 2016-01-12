@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="shortcut icon" href="images/lib.jpeg" type="image/x-icon" />
+		<link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
 		<link rel="stylesheet" type="text/css" href="css/website.css">
 		 <title>CHILDREN LIBRARY</title>
 	</head>
-	<body >
+	<body onload="document.regForm1.userEmail.focus();">
 		<script src="js/login_valid.js"></script>
 		<div id="header">
-			<img src="images/lib.jpeg" align="left" style="width:150px;height:150px;">
+			<img src="images/logo.png" align="left" style="width:150px;height:150px;">
 			<h1 align="center"> CHILDREN LIBRARY</h1>
    		</div>
 		<div id="nav" align="left">
@@ -22,15 +22,16 @@
 			<h3>Login</h3><br>
   			<form name="regForm1" onsubmit="return validateform1()">
 				<!--User name:<br>-->
-				<input type="text" name="userEmail" id="userEmail" align="center" placeholder="useremail" required>
+				<input type="text" name="userEmail" id="userEmail" align="center" placeholder="useremail" >
 				<br>
 				<br>
 				<!--Password:<br>-->
-				<input type="password" name="passWord" id="passWord" placeholder="password" required>
+				<input type="password" name="passWord" id="passWord" placeholder="password" >
 				<br>
 				<br><br>
 				<input type="submit" value="Submit" name="submit1">
 				  <input type="reset" value="Reset" name="r2">
+				  <div id="message"></div>
 			</form> 
 		</div>
 		<div id="footer">

@@ -1,13 +1,33 @@
+#wrapper{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+img{
+      width: 10%;
+      height: 30%;
+    /*  display: block;*/
+      float: left;
+  }
+h1{
+    font-family: Verdana;
+    font-style: italic;
+    font-size: 271%;
+    color:hotpink;
+    background-color:steelblue;
+    text-align:center;
+  }
+
 body{
   margin: 0;
 }
-#header {
+/*#header {
     background-color:steelblue;
     color:hotpink;
     text-align:center;
     padding:5px;
     height: 100px;
-}
+}*/
 #nav ul {
   
     list-style-type: none;
@@ -43,6 +63,11 @@ li a:hover {
 
   height: 600px;
 }
+#message{
+ font-size:15px;
+color: red;
+}
+
 #footer {
     background-color:black;
     color:white;
