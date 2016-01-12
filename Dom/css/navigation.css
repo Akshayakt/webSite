@@ -1,0 +1,181 @@
+.content_wrapper {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 90px;
+    right: 619px;
+    width: 250px;
+    border: 3px solid black;
+    height: 342px;
+    overflow: hidden;
+}
+
+.nav_header {
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    left: 0px;
+    width: 250px;
+    height: 38px;
+    background: none repeat scroll 0% 0% #FFF;
+    z-index: 3;
+    box-shadow: 0px 0px 12px rgba(57, 70, 78, 0.45);
+}
+
+#hamburger {
+    border: 1px solid #374C77;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    height: 22px;
+    padding: 7px 4px;
+    position: relative;
+    width: 28px;
+    background: wheat;
+    float: left;
+    animation-name: change_bgcolor;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+@keyframes change_bgcolor{
+    from {background-color: wheat;}
+    to {background-color: black;}
+}
+
+@keyframes change_color{
+    from {background-color: peru;}
+    to {background-color: red;}
+}
+
+/*
+ The white stripes in the hamburger button
+ */
+
+#hamburger div {
+    height: 2px;
+    margin-top: 2px;
+    width: 90%;
+    background-color: peru;
+    border-radius: 2px;
+    border: 1px solid peru;
+    animation-name: change_color;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+#app_name {
+    font-size: 20px;
+    color: #3E443C;
+    margin-top: 10px;
+    margin-left: 56px;
+    float: left;
+    font-weight: bold;
+}
+
+.app_content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40px;
+    bottom: 40px;
+    overflow: auto;
+}
+
+.app_content p {
+    padding: 5px;
+    text-align: justify;
+}
+
+#drawer {
+    position: absolute;
+    top: 40px;
+    padding-top: 50px;
+    height: auto;
+    width: 118px;
+    background: wheat;
+    overflow-x: hidden;
+    overflow-y: auto;
+    bottom: 38px;
+    /*background:*/
+    transition: 1s;
+    left: -250px;
+    z-index: 2;
+}
+
+#drawer.drawer_left {
+    transition: 1s;
+    left: 0px;
+}
+
+#drawer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#drawer li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+
+#drawer li {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+#drawer li:hover {
+    background-color: peru;
+}
+
+#drawer {
+    padding-top: 10px;
+}
+
+.nav_footer {
+    position: absolute;
+    top: 301px;
+    right: 0px;
+    left: 0px;
+    width: 250px;
+    box-shadow: 0px 0px 12px rgba(57, 70, 78, 0.45);
+    height: 38px;
+    border-left: 0px none;
+    bottom: 0px;
+    background: none repeat scroll 0% 0% #FFF;
+    padding: 0px;
+    z-index: 3;
+}
+
+#foot_menu {
+    float: left;
+    cursor: pointer;
+    margin-left: 27px;
+    margin-top: 12px;
+    margin-right: 67px;
+}
+
+#foot_home {
+    float: left;
+    cursor: pointer;
+    margin-left: 11px;
+    margin-top: 12px;
+}
+
+#foot_back {
+    float: right;
+    cursor: pointer;
+    margin-right: 26px;
+    margin-top: 12px;
+}
+
+.nav_footer div:hover {
+    background-color: peru;
+}

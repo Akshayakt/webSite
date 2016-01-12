@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="css/navigation.css">
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="content_wrapper">
+            <div class="container">
+                <header class="nav_header">
+                    <div id="hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <span id="app_name">SampleApp</span>
+                </header>
+                <nav id="drawer">
+                    <ul>
+                        <li><a href="#"><i class="fa fa-home">Home</i>
+                        </a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </nav>
+                <div class="app_content">
+                    <p>
+                    My Bonnie lies over the ocean.
+                    My Bonnie lies over the sea.
+                    My Bonnie lies over the ocean.
+                    Oh, bring back my Bonnie to me.
+                    </p>
+                </div>
+                <footer class="nav_footer">
+                    <div id="foot_menu" ><i class="fa fa-clone"></i>
+                    </div>
+                    <div id="foot_home" ><i class="fa fa-home"></i>
+                    </div>
+                    <div id="foot_back" ><i class="fa fa-reply"></i>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script type="text/javascript">
+                                        document.getElementById('hamburger').addEventListener('click',drawer, false);
+                                        function  drawer(){
+                                            document.getElementById('drawer').classList.toggle('drawer_left');
+                                        }
+        </script>
+    </body>
+</html>

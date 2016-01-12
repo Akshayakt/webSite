@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>object properties</title>
+    </head>
+    <body>
+        <img id="img" alt="Flower" src="img1.jpg" width="150" height="113">
+        <p>Click the button to display each attribute's name and value of the image above.</p>
+        <button onclick="attributFun()">Try it</button>
+        <p id="attributes"></p>
+        <p>Click the button get info about the body element's child nodes.</p>
+        <button onclick="childNodeFun()">Try it</button>
+        <p id="childNodes"></p>
+        <script>
+                        function attributFun() {
+                            var x = document.getElementById("img");
+                            var txt = "";
+                            var i;
+                            for (i = 0; i < x.attributes.length; i++) {
+                                txt = txt + x.attributes[i].name + " = " + x.attributes[i].value + "<br>";
+                            }
+                            document.getElementById("attributes").innerHTML = txt;
+                        }
+                        function childNodeFun() {
+            var c = document.body.childNodes;
+            var txt = "";
+            var i;
+            for (i = 0; i < c.length; i++) {
+                txt = txt + c[i].nodeName + "<br>";
+            }
+            document.getElementById("childNodes").innerHTML = txt;
+        }
+        </script>
+    </body>
+</html>

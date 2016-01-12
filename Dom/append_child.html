@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dom Example</title>
+</head>
+    <body>
+        <ul id="list">
+            <li>Coffee</li>
+            <li>Tea</li>
+        </ul>
+        <p>Click the button to append an item to the end of the list.</p>
+        <button onclick="appendFun()">Try it</button>
+        <script>
+        function appendFun() {
+            var node = document.createElement("LI");
+            var textnode = document.createTextNode("Water");
+            node.appendChild(textnode);
+            document.getElementById("list").appendChild(node);
+        }
+        </script>
+    </body>
+</html>
