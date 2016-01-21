@@ -1,0 +1,421 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.font_bold {
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+}
+
+.font_reg {
+    font-family: 'Asap', sans-serif;
+}
+
+.font_size_head {
+    font-size: 36pt;
+}
+
+.font_size_content {
+    font-size: 18pt;
+}
+
+.font_ban {
+    font-size: 24pt;
+}
+
+#container {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#site_header {
+    margin: 0 auto;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    background-color: #ffffff;
+    top: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    width: 180px;
+}
+
+.nav li {
+    display: inline-block;
+    float: left;
+}
+
+li a {
+    color: #333333;
+    font-size: 18pt;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.about {
+    color: #999999;
+}
+
+.logo {
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    display: inline-block;
+}
+
+.social {
+    position: absolute;
+    right: 5px;
+    display: inline-block;
+    width: 20%;
+    top: 5px;
+}
+
+.social img {
+    margin-left: 5%;
+}
+
+#signup_banner {
+    height: 100%;
+    max-width: 100%;
+    margin: 72px auto;
+    background-image: url('images/bg1_repeat.png');
+    margin-bottom: 0;
+}
+
+.signup_head {
+    margin: 0px auto;
+    padding: 1px;
+    text-align: center;
+    font-size: 50pt;
+    color: #FFF;
+    max-width: 80%;
+}
+
+.signup_content {
+    margin: 0px auto;
+    padding: 2px;
+    text-align: center;
+    font-size: 24pt;
+    color: #ffffff;
+    max-width: 67%;
+    box-sizing: border-box;
+}
+
+.form {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16.3pt;
+    overflow: auto;
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+.email {
+    border-radius: 35px 0px 0px 35px;
+    float: left;
+    padding: 2px;
+    width: 230px;
+    height: 33px;
+    text-align: center;
+    background-color: #EE8277;
+    border: 0;
+    color: #ffffff;
+}
+
+.submit_button {
+    border-radius: 0px 35px 35px 0px;
+    background-color: #2ECC71;
+    padding: 2px;
+    width: 50px;
+    height: 37px;
+    font-size: 13.3pt;
+    border: 0px;
+    float: left;
+    color: #ffffff;
+}
+
+.signup_coming {
+    margin: 0px auto;
+    padding: 2px;
+    text-align: center;
+    font-size: 16pt;
+    color: #ffffff;
+    width: 33%;
+    box-sizing: border-box;
+}
+
+.content_head {
+    max-width: 100%;
+    margin: 0px auto;
+    color: #333333;
+    text-align: center;
+}
+
+.content {
+    margin: 0 auto;
+    color: #999999;
+    text-align: center;
+    max-width: 50%;
+}
+
+.content_img {
+    text-align: center;
+    max-width: 100%;
+}
+
+.updates {
+    margin: 0px auto;
+    padding: 40px;
+    max-width: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.updates_img {
+    margin: 0 auto;
+    float: left;
+    width: 48%;
+    display: inline-block;
+}
+
+.update_head {
+    color: #333333;
+    margin: 0 auto;
+}
+
+.updates_divider {
+    margin: 0 auto;
+    width: 4%;
+    display: inline-block;
+}
+
+.update_section {
+    margin: 0 auto;
+    width: 48%;
+    float: right;
+    display: inline-block;
+}
+
+.updates_desc {
+    color: #999999;
+}
+
+.notification {
+    margin: 0px auto;
+    padding: 40px;
+    max-width: 100%;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+.notification_img {
+    width: 48%;
+    margin: 0 auto;
+    float: right;
+}
+
+.notification_section {
+    margin: 0 auto;
+    width: 48%;
+    float: left;
+}
+
+.notification_head {
+    color: #333333;
+}
+
+.notification_desc {
+    color: #999999;
+}
+
+#bottom_banner {
+    height: 100%;
+    max-width: 100%;
+    margin: 0px auto;
+    background-image: url('images/bg2.png');
+}
+
+#black_banner {
+    background-color: #333333;
+    max-width: 100%;
+    margin: 0px auto;
+    height: 300px;
+}
+
+.banner_img {
+    margin: 0 auto;
+    max-width: 100%;
+    margin-left: 135px;
+}
+
+.banner_img img {
+    float: left;
+    margin-top: 21px;
+}
+
+span {
+    color: #ffffff;
+    font-size: 40pt;
+    float: left;
+    margin-top: 115px;
+    margin-left: -60px;
+}
+
+
+/*.upcomer {
+    color: #ffffff;
+    font-size: 48pt;
+    max-width: 50%;
+    float: left;
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: -60px;
+}
+
+.upcomer p {
+    float: left;
+}*/
+
+#site_footer {
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    height: 25px;
+}
+
+@media screen and (max-width: 480px) {
+    .nav li {
+        display: block;
+        float: none;
+    }
+    li a {
+        font-size: 13pt;
+        padding: 0;
+    }
+    .logo {
+        top: 40%;
+    }
+    .social {
+        display: none;
+    }
+    .updates_img {
+        max-width: 100%;
+        width: 100%;
+    }
+    .update_section {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 5px;
+    }
+    .font_size_content {
+        font-size: 9pt;
+    }
+    .notification_img {
+        width: 100%;
+    }
+    .notification img {
+        width: 100%;
+    }
+    .notification_section {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .head_font {
+        font-size: 28pt;
+    }
+    .font_si {
+        font-size: 14pt;
+    }
+    .form {
+        max-width: 200px;
+    }
+    .email {
+        width: 153px;
+        height: 28px;
+        font-size: 12.3pt;
+    }
+    .submit_button {
+        width: 37px;
+        height: 32px;
+        font-size: 11.3pt;
+    }
+    .signup_coming {
+        font-size: 12px;
+    }
+    .font_size_head {
+        font-size: 19pt;
+    }
+    .content_img img {
+        width: 100%;
+    }
+    .updates_img {
+        max-width: 80%
+    }
+    .updates_divider {
+        width: 0;
+    }
+    .updates_img img {
+        width: 100%;
+    }
+    .update_section {
+        max-width: 100%;
+    }
+    .font_size_content {
+        font-size: 12pt;
+    }
+    .notification_img {
+        max-width: 80%
+    }
+    .notification_divider {
+        width: 0;
+    }
+    .notification_img img {
+        width: 100%;
+    }
+    .notification_section {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+    .head_font {
+        font-size: 40pt;
+    }
+    .font_si {
+        font-size: 22pt;
+    }
+    .font_size_head {
+        font-size: 24pt;
+    }
+    .font_size_content {
+        font-size: 15pt;
+    }
+    .content_img img {
+        width: 100%;
+    }
+    .updates_img {
+        max-width: 100%;
+    }
+    .updates_img img {
+        width: 100%;
+    }
+    .notification_img {
+        max-width: 100%;
+    }
+    .notification_img img {
+        width: 100%;
+    }
+}
